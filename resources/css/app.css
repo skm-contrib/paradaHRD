@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Sofia Sans";
+    src: url('./fonts/SofiaSans-Black.ttf');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Sofia Sans";
+    src: url('./fonts/SofiaSans-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Sofia Sans";
+    src: url('./fonts/SofiaSans-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Sofia Sans";
+    src: url('./fonts/SofiaSans-Light.ttf');
+    font-weight: 300;
+}
