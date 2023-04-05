@@ -43,7 +43,7 @@
                         </p>
                 </router-link>
                 <router-link to="/" class="mt-12 border-2 border-black transition-all duration-500
-                    bg-transparent bg-black font-black hover:bg-white hover:text-black text-white rounded-full
+                    bg-black font-black hover:bg-white text-white hover:text-black  rounded-full
                     hover:-translate-y-1">
                         <p class="font-sofia w-32 my-2 text-center">
                             Додому

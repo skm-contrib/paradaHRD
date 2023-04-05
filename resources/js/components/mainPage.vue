@@ -10,15 +10,18 @@
             </div>
 
             <div>
-                <h1 class="text-5xl font-sofiaMedium">Відділ кадрів</h1>
+                <h1 class="text-5xl font-sofia">Відділ кадрів</h1>
             </div>
             <div>
+                <router-link to="/login">
                     <button class="mt-12 text-white transition-all duration-500
                     bg-red-400 rounded-full
                     shadow-red-600/60 shadow-lg hover:-translate-y-1">
                         <p class="font-sofia text-2xl mx-10 p-4"
                 >Увійти</p>
                     </button>
+                </router-link>
+                    
             </div>
         </div>
         <div class="bg-red-400 w-full flex flex-col h-screen shadow-red-600/60 shadow-2xl">
