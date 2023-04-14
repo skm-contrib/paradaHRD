@@ -3,6 +3,9 @@
     "functions": {
         "api/index.php": {
             "runtime": "vercel-php@0.5.2"
+        },
+        "pages/**/*": {
+            "excludeFiles": "public/**"
         }
     },
     "routes": [
