@@ -2,9 +2,16 @@
     "version": 2,
     "functions": {
         "api/index.php": {
-            "runtime": "vercel-php@0.5.2"
+            "runtime": "vercel-php@0.5.2",
+            "excludeFiles": "{node_modules/**/*,.next/**/*,.vercel/**/*}"
         }
     },
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/api/index.php"
+        }
+    ],
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "false",
