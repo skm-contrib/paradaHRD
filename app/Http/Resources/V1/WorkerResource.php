@@ -23,6 +23,7 @@ class WorkerResource extends JsonResource
             'sex' => $this->sex,
             'salary' => $this->salary,
             'vacation' => $this->vacation,
+            'sick' => $this->sick,
             'password' => $this->password
         ];
     }

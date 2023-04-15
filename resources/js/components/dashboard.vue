@@ -1,16 +1,27 @@
 <template>
   <div
-    v-if="worker.post == 'Працівник відділу кадрів'"
+    v-if="worker.post == 'Працівник відділу кадрів' || worker.post == 'admin'"
     v-cloak
     class="flex flex-row"
   >
-    <div class="flex flex-col px-10 bg-red-400 h-screen">
-      <div class="flex flex-col pt-10 items-center">
+    <div
+      id="fastBtns"
+      class="flex flex-col px-6 bg-red-400 h-screen w-screen sm:w-fit"
+    >
+      <div
+        class="w-full sm:w-fit flex flex-row pt-10 items-center justify-between md:justify-center"
+      >
         <img
           :src="'/storage/images/ParadaLogoWhite.png'"
           alt="no image"
           class="w-40"
         />
+        <p
+          class="text-2xl font-bold text-white visible sm:invisible"
+          @click="closeBtns()"
+        >
+          =
+        </p>
       </div>
 
       <div class="pt-20 flex flex-col gap-4">
@@ -23,7 +34,7 @@
         >
           <div
             tag="diyi"
-            class="m-2 flex flex-row justify-start items-center align-baseline gap-4"
+            class="m-2 p-2 text-2xl flex flex-row justify-start items-center align-baseline gap-4"
           >
             <img
               tag="diyi"
@@ -44,7 +55,7 @@
         >
           <div
             tag="workers"
-            class="m-2 flex flex-row justify-start items-center align-baseline gap-4"
+            class="m-2 p-2 text-2xl w-64 flex flex-row justify-start items-center align-baseline gap-4"
           >
             <img
               tag="workers"
@@ -57,8 +68,10 @@
         </button>
       </div>
 
-      <div class="font-sofia flex flex-col items-center bottom-0 m-auto">
-        <h2 class="text-white text-2xl font-bold">{{ worker.name }}</h2>
+      <div
+        class="font-sofia flex flex-col align-bottom items-center bottom-0 m-auto"
+      >
+        <h2 class="text-white text-3xl font-bold">{{ worker.name }}</h2>
         {{ $store.state.userID }}
         <p class="text-red-800">{{ worker.post }}</p>
         <p class="text-neutral-700">{{ worker.mail }}</p>
@@ -147,6 +160,11 @@ export default {
   },
 
   methods: {
+    closeBtns() {
+      document.getElementById("fastBtns").classList.add("invisible");
+      document.getElementById("fastBtns").classList.add("w-0");
+      document.getElementById("fastBtns").classList.remove("px-6");
+    },
     selectPage(name) {
       let elTag = name.srcElement.attributes[0].nodeValue;
 

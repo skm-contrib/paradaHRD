@@ -29,7 +29,8 @@ class StoreWorkerRequest extends FormRequest
             'post' => ['required'],
             'sex' => ['required'],
             'salary' => ['required'],
-            'vacation' => ['required'],
+            'vacation' => [''],
+            'sick' => ['required'],
             'password' => ['required'],
         ];
     }

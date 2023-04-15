@@ -25,7 +25,7 @@ export default function useWorkers() {
     const storeWorker = async (data) => {
         try {
             await axios.post("http://127.0.0.1:8000/api/v1/workers", data);
-            await router.push("/dashboard");
+            await router.push({ name: "WorkerIndex" });
 
         } catch (error) {
             if (error.response.status === 422) {
@@ -37,7 +37,8 @@ export default function useWorkers() {
     const updateWorker = async (id) => {
         try {
             await axios.put("http://127.0.0.1:8000/api/v1/workers/" + id, worker.value);
-            await router.push({ name: "WorkerWatch" });
+            await router.push({ name: "WorkerIndex" });
+            await router.push({ name: 'WorkerWatch', params: { id: id } });
         } catch (error) {
             if (error.response.status === 422) {
                 errors.value = error.response.data.errors;
@@ -71,20 +72,32 @@ export default function useWorkers() {
 
     const addSalary = async (data, id) => {
         worker.value.salary = data;
-        await axios.put("http://127.0.0.1:8000/api/v1/workers/" + id, worker.value);
         await router.push({ name: "WorkerIndex" });
+        await axios.put("http://127.0.0.1:8000/api/v1/workers/" + id, worker.value);
+        await router.push({ name: 'WorkerWatch', params: { id: id } });
     }
 
-    const addVacation = async (data, id) => {
-        worker.value.vacation = data;
-        await axios.put("http://127.0.0.1:8000/api/v1/workers/" + id, worker.value);
+    const addVacation = async (vacationData, sickStatus, id) => {
+        worker.value.vacation = vacationData;
+        worker.value.sick = sickStatus;
         await router.push({ name: "WorkerIndex" });
+        await axios.put("http://127.0.0.1:8000/api/v1/workers/" + id, worker.value);
+        await router.push({ name: 'WorkerWatch', params: { id: id } });
+    }
+
+    const updatePassword = async (newPassword, id) => {
+        worker.value.password = newPassword;
+        await router.push({ name: "WorkerIndex" });
+        await axios.put("http://127.0.0.1:8000/api/v1/workers/" + id, worker.value);
+        await router.push({ name: 'WorkerWatch', params: { id: id } });
     }
 
     const removeVacation = async (id) => {
         worker.value.vacation = '';
-        await axios.put("http://127.0.0.1:8000/api/v1/workers/" + id, worker.value);
+        worker.value.sick = false;
         await router.push({ name: "WorkerIndex" });
+        await axios.put("http://127.0.0.1:8000/api/v1/workers/" + id, worker.value);
+        await router.push({ name: 'WorkerWatch', params: { id: id } });
     }
 
     const destroyWorker = async (id) => {
@@ -104,6 +117,7 @@ export default function useWorkers() {
         getWorkers,
         updateWorker,
         addVacation,
+        updatePassword,
         logout,
         addSalary,
         storeWorker,

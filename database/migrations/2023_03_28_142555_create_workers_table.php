@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('phone_number');
             $table->string('mail');
             $table->string('vacation')->nullable();
+            $table->boolean('sick')->nullable();
             $table->string('password');
             $table->timestamps();
         });

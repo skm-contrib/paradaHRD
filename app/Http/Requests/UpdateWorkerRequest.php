@@ -30,6 +30,7 @@ class UpdateWorkerRequest extends FormRequest
             'sex' => [''],
             'salary' => [''],
             'vacation' => [''],
+            'sick' => [''],
             'password' => [''],
         ];
     }
