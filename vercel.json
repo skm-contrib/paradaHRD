@@ -1,10 +1,26 @@
 {
     "version": 2,
     "functions": {
-        "public/index.php": {
+        "api/index.php": {
             "runtime": "vercel-php@0.5.2"
         }
     },
+    "builds": [
+        {
+            "src": "nuxt.config.js",
+            "use": "@nuxtjs/vercel-builder@0.21.3",
+            "config": {
+                "serverFiles": [
+                    "package.json",
+                    "server/**"
+                ],
+                "tscOptions": {
+                    "sourceMap": false
+                },
+                "internalServer": true
+            }
+        }
+    ],
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "false",
