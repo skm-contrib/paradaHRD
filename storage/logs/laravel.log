@@ -19726,3 +19726,35 @@ CONTEXT:  параметр порталу без назви $1 = '...' at E:\\Pr
 #45 E:\\Projects\\VSCprojects\\paradapractice\\paradaHRD\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('E:\\\\Projects\\\\VSC...')
 #46 {main}
 "} 
+[2023-04-18 18:23:34] local.ERROR: The "-s" option does not exist. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): The \"-s\" option does not exist. at D:\\Practice\\newparadahrd\\paradaHRD\\vendor\\symfony\\console\\Input\\ArgvInput.php:119)
+[stacktrace]
+#0 D:\\Practice\\newparadahrd\\paradaHRD\\vendor\\symfony\\console\\Input\\ArgvInput.php(101): Symfony\\Component\\Console\\Input\\ArgvInput->parseShortOptionSet()
+#1 D:\\Practice\\newparadahrd\\paradaHRD\\vendor\\symfony\\console\\Input\\ArgvInput.php(81): Symfony\\Component\\Console\\Input\\ArgvInput->parseShortOption()
+#2 D:\\Practice\\newparadahrd\\paradaHRD\\vendor\\symfony\\console\\Input\\ArgvInput.php(68): Symfony\\Component\\Console\\Input\\ArgvInput->parseToken()
+#3 D:\\Practice\\newparadahrd\\paradaHRD\\vendor\\symfony\\console\\Input\\Input.php(52): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#4 D:\\Practice\\newparadahrd\\paradaHRD\\vendor\\symfony\\console\\Command\\Command.php(271): Symfony\\Component\\Console\\Input\\Input->bind()
+#5 D:\\Practice\\newparadahrd\\paradaHRD\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(164): Symfony\\Component\\Console\\Command\\Command->run()
+#6 D:\\Practice\\newparadahrd\\paradaHRD\\vendor\\symfony\\console\\Application.php(1022): Illuminate\\Console\\Command->run()
+#7 D:\\Practice\\newparadahrd\\paradaHRD\\vendor\\symfony\\console\\Application.php(314): Symfony\\Component\\Console\\Application->doRunCommand()
+#8 D:\\Practice\\newparadahrd\\paradaHRD\\vendor\\symfony\\console\\Application.php(168): Symfony\\Component\\Console\\Application->doRun()
+#9 D:\\Practice\\newparadahrd\\paradaHRD\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(102): Symfony\\Component\\Console\\Application->run()
+#10 D:\\Practice\\newparadahrd\\paradaHRD\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(155): Illuminate\\Console\\Application->run()
+#11 D:\\Practice\\newparadahrd\\paradaHRD\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#12 {main}
+"} 
+[2023-04-18 18:23:47] local.ERROR: The "-s" option does not exist. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): The \"-s\" option does not exist. at D:\\Practice\\newparadahrd\\paradaHRD\\vendor\\symfony\\console\\Input\\ArgvInput.php:202)
+[stacktrace]
+#0 D:\\Practice\\newparadahrd\\paradaHRD\\vendor\\symfony\\console\\Input\\ArgvInput.php(104): Symfony\\Component\\Console\\Input\\ArgvInput->addShortOption()
+#1 D:\\Practice\\newparadahrd\\paradaHRD\\vendor\\symfony\\console\\Input\\ArgvInput.php(81): Symfony\\Component\\Console\\Input\\ArgvInput->parseShortOption()
+#2 D:\\Practice\\newparadahrd\\paradaHRD\\vendor\\symfony\\console\\Input\\ArgvInput.php(68): Symfony\\Component\\Console\\Input\\ArgvInput->parseToken()
+#3 D:\\Practice\\newparadahrd\\paradaHRD\\vendor\\symfony\\console\\Input\\Input.php(52): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#4 D:\\Practice\\newparadahrd\\paradaHRD\\vendor\\symfony\\console\\Command\\Command.php(271): Symfony\\Component\\Console\\Input\\Input->bind()
+#5 D:\\Practice\\newparadahrd\\paradaHRD\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(164): Symfony\\Component\\Console\\Command\\Command->run()
+#6 D:\\Practice\\newparadahrd\\paradaHRD\\vendor\\symfony\\console\\Application.php(1022): Illuminate\\Console\\Command->run()
+#7 D:\\Practice\\newparadahrd\\paradaHRD\\vendor\\symfony\\console\\Application.php(314): Symfony\\Component\\Console\\Application->doRunCommand()
+#8 D:\\Practice\\newparadahrd\\paradaHRD\\vendor\\symfony\\console\\Application.php(168): Symfony\\Component\\Console\\Application->doRun()
+#9 D:\\Practice\\newparadahrd\\paradaHRD\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(102): Symfony\\Component\\Console\\Application->run()
+#10 D:\\Practice\\newparadahrd\\paradaHRD\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(155): Illuminate\\Console\\Application->run()
+#11 D:\\Practice\\newparadahrd\\paradaHRD\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#12 {main}
+"} 
