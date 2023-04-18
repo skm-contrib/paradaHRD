@@ -1,18 +1,87 @@
 {
+  "@vuepic.css": {
+    "file": "assets/@vuepic-c9aaecce.css",
+    "src": "@vuepic.css"
+  },
+  "_@kurkle-b1b89bbc.js": {
+    "file": "assets/@kurkle-b1b89bbc.js"
+  },
+  "_@vue-52b38e44.js": {
+    "file": "assets/@vue-52b38e44.js"
+  },
+  "_@vuepic-13f0b714.js": {
+    "css": [
+      "assets/@vuepic-c9aaecce.css"
+    ],
+    "file": "assets/@vuepic-13f0b714.js",
+    "imports": [
+      "_@vue-52b38e44.js",
+      "_date-fns-0edc6bee.js"
+    ]
+  },
+  "_axios-aba6f0e0.js": {
+    "file": "assets/axios-aba6f0e0.js"
+  },
+  "_chart.js-9e35d999.js": {
+    "file": "assets/chart.js-9e35d999.js",
+    "imports": [
+      "_@kurkle-b1b89bbc.js"
+    ]
+  },
+  "_date-fns-0edc6bee.js": {
+    "file": "assets/date-fns-0edc6bee.js"
+  },
+  "_vue-4ed993c7.js": {
+    "file": "assets/vue-4ed993c7.js"
+  },
+  "_vue-chartjs-b37367b5.js": {
+    "file": "assets/vue-chartjs-b37367b5.js",
+    "imports": [
+      "_chart.js-9e35d999.js",
+      "_@vue-52b38e44.js"
+    ]
+  },
+  "_vue-router-dd1108fa.js": {
+    "file": "assets/vue-router-dd1108fa.js",
+    "imports": [
+      "_@vue-52b38e44.js"
+    ]
+  },
+  "_vuex-878c9f95.js": {
+    "file": "assets/vuex-878c9f95.js",
+    "imports": [
+      "_@vue-52b38e44.js"
+    ]
+  },
+  "_vuex-persistedstate-55e3175c.js": {
+    "file": "assets/vuex-persistedstate-55e3175c.js"
+  },
   "resources/css/app.css": {
-    "file": "assets/app-fa3d6af2.css",
+    "file": "assets/app-c3a23719.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
   "resources/js/app.css": {
-    "file": "assets/app-84a4fae4.css",
+    "file": "assets/app-5f1ee49a.css",
     "src": "resources/js/app.css"
   },
   "resources/js/app.js": {
     "css": [
-      "assets/app-84a4fae4.css"
+      "assets/app-5f1ee49a.css"
     ],
-    "file": "assets/app-afd107f7.js",
+    "file": "assets/app-ae08945a.js",
+    "imports": [
+      "_@vue-52b38e44.js",
+      "_vuex-878c9f95.js",
+      "_vuex-persistedstate-55e3175c.js",
+      "_vue-router-dd1108fa.js",
+      "_axios-aba6f0e0.js",
+      "_@vuepic-13f0b714.js",
+      "_chart.js-9e35d999.js",
+      "_vue-chartjs-b37367b5.js",
+      "_date-fns-0edc6bee.js",
+      "_@kurkle-b1b89bbc.js"
+    ],
     "isEntry": true,
     "src": "resources/js/app.js"
   }
