@@ -21,21 +21,5 @@ export default defineConfig({
             }
         }
     },
-    experimental: {
-        outputFileTracingExcludes: {
-            '*': [
-                './node_modules/.pnpm/date-fns*',
-                './node_modules/.pnpm/date-fns',
-                './node_modules/.pnpm/date-fns@2.29.3',
-                'node_modules/.pnpm/date-fns*',
-                'node_modules/.pnpm/date-fns',
-                'node_modules/.pnpm/date-fns@2.29.3',
-                '**/node_modules/date-fns*',
-                '**/node_modules/date-fns',
-                '**/node_modules/date-fns@2.29.3',
-            ],
-        }
-    }
-
 
 });
