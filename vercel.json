@@ -3,7 +3,7 @@
     "functions": {
         "api/**/*": {
             "runtime": "vercel-php@0.5.2",
-            "excludeFiles": "{public/**, node_modules/**/*,.vendor/**/*,.vercel/**/*}"
+            "excludeFiles": "{.gitignore, public/**, node_modules/**/*,.vendor/**/*,.vercel/**/*}"
         }
     },
     "routes": [
