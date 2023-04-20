@@ -11,19 +11,5 @@
             "src": "/(.*)",
             "dest": "/api/index.php"
         }
-    ],
-    "builds": [
-        {
-            "config": {
-                "serverFiles": [
-                    "package.json",
-                    "api/**"
-                ],
-                "tscOptions": {
-                    "sourceMap": false
-                },
-                "internalServer": true
-            }
-        }
     ]
 }
