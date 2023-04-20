@@ -12,7 +12,12 @@ export default defineConfig({
     ],
     build: {
         manifest: true,
-        outDir: './dist'
+        outDir: './dist',
+        rollupOptions: {
+            input: {
+                app: './resources/views/app.blade.php' // default
+            }
+        }
     },
 
 });
