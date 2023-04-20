@@ -18,15 +18,16 @@ class ComposerStaticInitc7eb28acb9acdf895c38900ad31d9c6b
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         '3bd81c9b8fcc150b69d8b63b4d2ccf23' => __DIR__ . '/..' . '/spatie/flare-client-php/src/helpers.php',
-        '35a6ad97d21e794e7e22a17d806652e4' => __DIR__ . '/..' . '/nunomaduro/termwind/src/Functions.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
+        'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
+        '35a6ad97d21e794e7e22a17d806652e4' => __DIR__ . '/..' . '/nunomaduro/termwind/src/Functions.php',
         '09f6b20656683369174dd6fa83b7e5fb' => __DIR__ . '/..' . '/symfony/polyfill-uuid/bootstrap.php',
         'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
-        'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
+        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         'e39a8b23c42d4e1452234d762b03835a' => __DIR__ . '/..' . '/ramsey/uuid/src/functions.php',
-        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
+        'f0c96049ee331fe9e669cc4103ca4418' => __DIR__ . '/..' . '/innocenzi/laravel-vite/src/helpers.php',
         '265b4faa2b3a9766332744949e83bf97' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Collections/helpers.php',
         'c7a3c339e7e14b60e06a2d7fcce9476b' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Events/functions.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
@@ -81,6 +82,7 @@ class ComposerStaticInitc7eb28acb9acdf895c38900ad31d9c6b
             'Symfony\\Component\\ErrorHandler\\' => 31,
             'Symfony\\Component\\CssSelector\\' => 30,
             'Symfony\\Component\\Console\\' => 26,
+            'Spatie\\LaravelPackageTools\\' => 27,
             'Spatie\\LaravelIgnition\\' => 23,
             'Spatie\\Ignition\\' => 16,
             'Spatie\\FlareClient\\' => 19,
@@ -124,6 +126,8 @@ class ComposerStaticInitc7eb28acb9acdf895c38900ad31d9c6b
         ),
         'I' => 
         array (
+            'Innocenzi\\Vite\\Database\\Factories\\' => 34,
+            'Innocenzi\\Vite\\' => 15,
             'Illuminate\\Support\\' => 19,
             'Illuminate\\' => 11,
         ),
@@ -302,6 +306,10 @@ class ComposerStaticInitc7eb28acb9acdf895c38900ad31d9c6b
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
         ),
+        'Spatie\\LaravelPackageTools\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/spatie/laravel-package-tools/src',
+        ),
         'Spatie\\LaravelIgnition\\' => 
         array (
             0 => __DIR__ . '/..' . '/spatie/laravel-ignition/src',
@@ -340,8 +348,8 @@ class ComposerStaticInitc7eb28acb9acdf895c38900ad31d9c6b
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+            0 => __DIR__ . '/..' . '/psr/http-factory/src',
+            1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -402,6 +410,14 @@ class ComposerStaticInitc7eb28acb9acdf895c38900ad31d9c6b
         'Laravel\\Sail\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/sail/src',
+        ),
+        'Innocenzi\\Vite\\Database\\Factories\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/innocenzi/laravel-vite/database/factories',
+        ),
+        'Innocenzi\\Vite\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/innocenzi/laravel-vite/src',
         ),
         'Illuminate\\Support\\' => 
         array (
@@ -507,7 +523,9 @@ class ComposerStaticInitc7eb28acb9acdf895c38900ad31d9c6b
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Http\\Controllers\\Api\\V1\\WorkerController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/V1/WorkerController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\IndexController' => __DIR__ . '/../..' . '/app/Http/Controllers/IndexController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
@@ -518,7 +536,12 @@ class ComposerStaticInitc7eb28acb9acdf895c38900ad31d9c6b
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\ValidateSignature' => __DIR__ . '/../..' . '/app/Http/Middleware/ValidateSignature.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Http\\Requests\\StoreWorkerRequest' => __DIR__ . '/../..' . '/app/Http/Requests/StoreWorkerRequest.php',
+        'App\\Http\\Requests\\UpdateWorkerRequest' => __DIR__ . '/../..' . '/app/Http/Requests/UpdateWorkerRequest.php',
+        'App\\Http\\Resources\\V1\\WorkerCollection' => __DIR__ . '/../..' . '/app/Http/Resources/V1/WorkerCollection.php',
+        'App\\Http\\Resources\\V1\\WorkerResource' => __DIR__ . '/../..' . '/app/Http/Resources/V1/WorkerResource.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
+        'App\\Models\\Worker' => __DIR__ . '/../..' . '/app/Models/Worker.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
@@ -2690,6 +2713,25 @@ class ComposerStaticInitc7eb28acb9acdf895c38900ad31d9c6b
         'Illuminate\\View\\ViewFinderInterface' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewFinderInterface.php',
         'Illuminate\\View\\ViewName' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewName.php',
         'Illuminate\\View\\ViewServiceProvider' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewServiceProvider.php',
+        'Innocenzi\\Vite\\Chunk' => __DIR__ . '/..' . '/innocenzi/laravel-vite/src/Chunk.php',
+        'Innocenzi\\Vite\\Commands\\ExportConfigurationCommand' => __DIR__ . '/..' . '/innocenzi/laravel-vite/src/Commands/ExportConfigurationCommand.php',
+        'Innocenzi\\Vite\\Commands\\UpdateTsconfigCommand' => __DIR__ . '/..' . '/innocenzi/laravel-vite/src/Commands/UpdateTsconfigCommand.php',
+        'Innocenzi\\Vite\\Configuration' => __DIR__ . '/..' . '/innocenzi/laravel-vite/src/Configuration.php',
+        'Innocenzi\\Vite\\EntrypointsFinder\\DefaultEntrypointsFinder' => __DIR__ . '/..' . '/innocenzi/laravel-vite/src/EntrypointsFinder/DefaultEntrypointsFinder.php',
+        'Innocenzi\\Vite\\EntrypointsFinder\\EntrypointsFinder' => __DIR__ . '/..' . '/innocenzi/laravel-vite/src/EntrypointsFinder/EntrypointsFinder.php',
+        'Innocenzi\\Vite\\Exceptions\\ManifestNotFoundException' => __DIR__ . '/..' . '/innocenzi/laravel-vite/src/Exceptions/ManifestNotFoundException.php',
+        'Innocenzi\\Vite\\Exceptions\\NoBuildPathException' => __DIR__ . '/..' . '/innocenzi/laravel-vite/src/Exceptions/NoBuildPathException.php',
+        'Innocenzi\\Vite\\Exceptions\\NoSuchConfigurationException' => __DIR__ . '/..' . '/innocenzi/laravel-vite/src/Exceptions/NoSuchConfigurationException.php',
+        'Innocenzi\\Vite\\Exceptions\\NoSuchEntrypointException' => __DIR__ . '/..' . '/innocenzi/laravel-vite/src/Exceptions/NoSuchEntrypointException.php',
+        'Innocenzi\\Vite\\Exceptions\\ViteException' => __DIR__ . '/..' . '/innocenzi/laravel-vite/src/Exceptions/ViteException.php',
+        'Innocenzi\\Vite\\HeartbeatCheckers\\HeartbeatChecker' => __DIR__ . '/..' . '/innocenzi/laravel-vite/src/HeartbeatCheckers/HeartbeatChecker.php',
+        'Innocenzi\\Vite\\HeartbeatCheckers\\HttpHeartbeatChecker' => __DIR__ . '/..' . '/innocenzi/laravel-vite/src/HeartbeatCheckers/HttpHeartbeatChecker.php',
+        'Innocenzi\\Vite\\Manifest' => __DIR__ . '/..' . '/innocenzi/laravel-vite/src/Manifest.php',
+        'Innocenzi\\Vite\\TagGenerators\\CallbackTagGenerator' => __DIR__ . '/..' . '/innocenzi/laravel-vite/src/TagGenerators/CallbackTagGenerator.php',
+        'Innocenzi\\Vite\\TagGenerators\\DefaultTagGenerator' => __DIR__ . '/..' . '/innocenzi/laravel-vite/src/TagGenerators/DefaultTagGenerator.php',
+        'Innocenzi\\Vite\\TagGenerators\\TagGenerator' => __DIR__ . '/..' . '/innocenzi/laravel-vite/src/TagGenerators/TagGenerator.php',
+        'Innocenzi\\Vite\\Vite' => __DIR__ . '/..' . '/innocenzi/laravel-vite/src/Vite.php',
+        'Innocenzi\\Vite\\ViteServiceProvider' => __DIR__ . '/..' . '/innocenzi/laravel-vite/src/ViteServiceProvider.php',
         'Laravel\\Sail\\Console\\AddCommand' => __DIR__ . '/..' . '/laravel/sail/src/Console/AddCommand.php',
         'Laravel\\Sail\\Console\\Concerns\\InteractsWithDockerComposeServices' => __DIR__ . '/..' . '/laravel/sail/src/Console/Concerns/InteractsWithDockerComposeServices.php',
         'Laravel\\Sail\\Console\\InstallCommand' => __DIR__ . '/..' . '/laravel/sail/src/Console/InstallCommand.php',
@@ -5252,6 +5294,10 @@ class ComposerStaticInitc7eb28acb9acdf895c38900ad31d9c6b
         'Spatie\\LaravelIgnition\\Support\\StringComparator' => __DIR__ . '/..' . '/spatie/laravel-ignition/src/Support/StringComparator.php',
         'Spatie\\LaravelIgnition\\Views\\BladeSourceMapCompiler' => __DIR__ . '/..' . '/spatie/laravel-ignition/src/Views/BladeSourceMapCompiler.php',
         'Spatie\\LaravelIgnition\\Views\\ViewExceptionMapper' => __DIR__ . '/..' . '/spatie/laravel-ignition/src/Views/ViewExceptionMapper.php',
+        'Spatie\\LaravelPackageTools\\Commands\\InstallCommand' => __DIR__ . '/..' . '/spatie/laravel-package-tools/src/Commands/InstallCommand.php',
+        'Spatie\\LaravelPackageTools\\Exceptions\\InvalidPackage' => __DIR__ . '/..' . '/spatie/laravel-package-tools/src/Exceptions/InvalidPackage.php',
+        'Spatie\\LaravelPackageTools\\Package' => __DIR__ . '/..' . '/spatie/laravel-package-tools/src/Package.php',
+        'Spatie\\LaravelPackageTools\\PackageServiceProvider' => __DIR__ . '/..' . '/spatie/laravel-package-tools/src/PackageServiceProvider.php',
         'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
         'Symfony\\Component\\Console\\Application' => __DIR__ . '/..' . '/symfony/console/Application.php',
         'Symfony\\Component\\Console\\Attribute\\AsCommand' => __DIR__ . '/..' . '/symfony/console/Attribute/AsCommand.php',

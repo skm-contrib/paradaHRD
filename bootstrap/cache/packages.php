@@ -1,4 +1,15 @@
 <?php return array (
+  'innocenzi/laravel-vite' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Innocenzi\\Vite\\ViteServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Vite' => 'Innocenzi\\Vite\\ViteFacade',
+    ),
+  ),
   'laravel/sail' => 
   array (
     'providers' => 
