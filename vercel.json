@@ -1,15 +1,23 @@
 {
     "version": 2,
-    "functions": {
-        "api/**/*": {
-            "runtime": "vercel-php@0.5.2",
-            "excludeFiles": "{.git, public/**, node_modules/**/*,.vendor/**/*,.vercel/**/*}"
-        }
-    },
     "routes": [
         {
             "src": "/(.*)",
             "dest": "/api/index.php"
+        }
+    ],
+    "builds": [
+        {
+            "config": {
+                "serverFiles": [
+                    "package.json",
+                    "api/**"
+                ],
+                "tscOptions": {
+                    "sourceMap": false
+                },
+                "internalServer": true
+            }
         }
     ]
 }
