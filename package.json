@@ -17,7 +17,6 @@
         "@vitejs/plugin-vue": "^4.0.0",
         "@vuepic/vue-datepicker": "^4.2.3",
         "chart.js": "^4.2.1",
-        "next": "^11.0.2-canary.5",
         "vercel": "^28.18.5",
         "vue": "^3.2.36",
         "vue-chartjs": "^5.2.0",
