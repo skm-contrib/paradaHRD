@@ -18,8 +18,8 @@
     </head>
     <body class="antialiased">
         <div id="app"></div>
-<script type="module" src="http://localhost:5173/@vite/client"></script>
-<script type="module" src="http://localhost:5173/main.js"></script>
+            <script type="module" src="http://localhost:5173/@vite/client"></script>
+            <script type="module" src="http://localhost:5173/main.js"></script>
         @vite('resources/js/app.js')
     </body>
 </html>

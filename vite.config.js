@@ -3,6 +3,9 @@ import laravel from 'laravel-vite-plugin';
 import vue from '@vitejs/plugin-vue';
 
 export default defineConfig({
+    server: {
+        origin: 'http://127.0.0.1:8080',
+    },
     plugins: [
         vue(),
         laravel({
@@ -12,12 +15,11 @@ export default defineConfig({
     ],
     build: {
         manifest: true,
-        outDir: './dist',
         rollupOptions: {
-            input: {
-                app: './resources/views/app.blade.php' // default
-            }
-        }
+            // overwrite default .html entry
+            input: './resources/js/app.js',
+        },
+        outDir: './dist'
     },
 
 });

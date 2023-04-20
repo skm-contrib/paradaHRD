@@ -21,5 +21,8 @@
         "vue-router": "^4.1.6",
         "vuex": "^4.0.2",
         "vuex-persistedstate": "^4.1.0"
+    },
+    "alias": {
+        "vue": "./node_modules/vue/dist/vue.common.js"
     }
 }
