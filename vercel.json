@@ -1,9 +1,9 @@
 {
     "version": 2,
     "functions": {
-        "api/index.php": {
+        "api/**/*": {
             "runtime": "vercel-php@0.5.2",
-            "excludeFiles": "{node_modules/**/*,.next/**/*,.vercel/**/*}"
+            "excludeFiles": "{public/**, node_modules/**/*,.vendor/**/*,.vercel/**/*}"
         }
     },
     "routes": [
