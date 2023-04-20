@@ -19758,3 +19758,20 @@ CONTEXT:  параметр порталу без назви $1 = '...' at E:\\Pr
 #11 D:\\Practice\\newparadahrd\\paradaHRD\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
 #12 {main}
 "} 
+[2023-04-20 08:25:09] local.ERROR: Command "server" is not defined.
+
+Did you mean one of these?
+    make:observer
+    serve {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"server\" is not defined.
+
+Did you mean one of these?
+    make:observer
+    serve at E:\\Projects\\Practice\\paradaHRD\\vendor\\symfony\\console\\Application.php:702)
+[stacktrace]
+#0 E:\\Projects\\Practice\\paradaHRD\\vendor\\symfony\\console\\Application.php(256): Symfony\\Component\\Console\\Application->find()
+#1 E:\\Projects\\Practice\\paradaHRD\\vendor\\symfony\\console\\Application.php(168): Symfony\\Component\\Console\\Application->doRun()
+#2 E:\\Projects\\Practice\\paradaHRD\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(102): Symfony\\Component\\Console\\Application->run()
+#3 E:\\Projects\\Practice\\paradaHRD\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(155): Illuminate\\Console\\Application->run()
+#4 E:\\Projects\\Practice\\paradaHRD\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#5 {main}
+"} 
