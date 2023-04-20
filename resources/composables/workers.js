@@ -7,9 +7,9 @@ export default function useWorkers() {
 
     const workers = ref([]);
     const worker = ref([]);
-    const errors = ref({});
-    const router = useRouter();
-    const store = useStore();
+    const errors = ref({})
+    const router = useRouter()
+    const store = useStore()
 
     const getWorkers = async () => {
         const response = await axios.get("http://127.0.0.1:8000/api/v1/workers");
